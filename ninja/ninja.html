@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practicando JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" content="text/css" href="styles.css">
+    <script>
+        $(document).ready(function() {
+            $('.gato').click(function() {
+                $(this).html('.ninja1');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>JQuery - assignment 1</h1>
+    <img src="ninja-cat/img/cat0.png" class="gato" alt="nijacat">
+    <img src="ninja-cat/img/cat1.png" class="gato2" alt="nijacat">
+    <img src="ninja-cat/img/cat2.png" class="gato3" alt="nijacat">
+    <img src="ninja-cat/img/cat3.png" class="gato4" alt="nijacat">
+    <img src="ninja-cat/img/cat4.png" class="gato5" alt="nijacat">
+
+
+
+    <img src='ninja-cat/img/ninja0.png' class="ninja1" data-alt-src='cat1.png' />
+    <img src='ninja-cat/img/ninja1.png' data-alt-src='cat1.png' />
+    <img src='ninja-cat/img/ninja2.png' data-alt-src='cat1.png' />
+    <img src="ninja-cat/img/ninja3.png" data-alt-src='cat1.png' />
+    <img src="ninja-cat/img/ninja4.png" data-alt-src='cat1.png' />
+
+</body>
+
+</html>
+
+
+console.log('data-alt-src value is', $(this).attr('data-alt-src'));
